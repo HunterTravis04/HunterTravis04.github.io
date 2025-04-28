@@ -1,0 +1,19 @@
+
+#div {
+   border: 2px rgb(142, 255, 110) solid;
+   width: 400px;
+   height: 200px;
+   background-color: rgb(28, 189, 28);
+   text-align: center;
+   border-radius: 5px;
+}
+#button {
+   background-color: rgb(255, 79, 79);
+   border: 2px rgb(210, 55, 55) groove;
+   border-radius: 6px;
+}
+#button2 {
+    background-color: rgb(79, 255, 111);
+    border: 2px rgb(55, 230, 86) groove;
+    border-radius: 6px;
+ }

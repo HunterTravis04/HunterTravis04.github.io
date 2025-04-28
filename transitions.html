@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hunters wacky transitions and one animation</title>
+    <style>
+        @keyframes divFive {
+            0%   {left:0px; top:0px; Background-color: Blue;}
+            25%  {left:0px; top:200px; Background-color: Red;}
+            50%  {left:200px; top:200px; Background-color: Yellow;}
+            75%  {left:200px; top:0px; Background-color: Green;}
+            100% {left:0px; top:0px; Background-color: Yellow;}
+        }
+        div {
+           border: black solid 2px;
+           width: 100px;
+           height: 80px;  
+           margin-bottom: 10px;
+           margin-right: 1140px;
+           padding-bottom: 10px;
+        }
+        #divOne {
+        transition: border 2s;
+        }
+        #divTwo {
+        transition: background-color 2s;
+        }
+        #divThree {
+        transition: width 2s, height 2s;
+        }
+        #divFour {
+        transition: border 2s, background-color 2s, width 2s, height 2s;
+        }
+        #divFive {
+        position: relative;
+        animation-name: divFive;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        }
+        #divOne:hover {
+        border: red groove 5px;
+        }
+        #divTwo:hover {
+        background-color: rgb(113, 255, 113);
+        }
+        #divThree:hover {
+        width: 150px;
+        height: 130px;
+        }
+        #divFour:hover {
+        width: 150px;
+        height: 130px;
+        background-color: rgb(113, 255, 113);
+        border: red groove 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divOne">
+        <p>Div #1</p>
+     </div>
+     <div id="divTwo">
+        <p>Div #2</p>
+     </div> 
+     <div id="divThree">
+        <p>Div #3</p>
+     </div> 
+     <div id="divFour">
+        <p>Div #4</p>
+     </div> 
+     <div id="divFive">
+        <p>Div #5</p>
+     </div> 
+</body>
+</html>
