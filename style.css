@@ -17,3 +17,15 @@
     border: 2px rgb(55, 230, 86) groove;
     border-radius: 6px;
  }
+#birthdaycolour {
+   float: left;
+   margin-top: 50px;
+   border: 2px solid black;
+   width: 165px;
+   height: 165px;
+}
+#higherorlower {
+   border: 2px solid black;
+   width: 165px;
+   height: 165px;
+}

@@ -8,9 +8,17 @@
 </head>
 <body>
     <script src="/external.js"></script>
-    <button id="button2" onclick="appear()">Appear</button>
-    <button id="button" onclick="dissapear()">Dissapear</button>
+    <button id="button2" onmouseover="appear()">Appear</button>
+    <button id="button" onmouseover="dissapear()">Dissapear</button>
     <button onclick="welcome()">Welcome!</button>
     <div id="div">I am a div</div>
+    <p>Enter your birthday!</p>
+    <label>Day</label>
+    <input id="day" onchange="error()"> <br>
+    <label>Month</label> 
+    <input id="month" onchange="error()"> <br>
+    <label>Year</label>
+    <input id="year" onchange="error()"> <br>
+    <p id="birthdaycolour">This is your birthday colour!</p>
 </body>
 </html>
